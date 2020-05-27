@@ -15,3 +15,8 @@
     font-family: "Netflix Sans";
     font-size: 1.5vw;
 }
+
+.main video {
+    width: 100%;
+    float: left;
+}
