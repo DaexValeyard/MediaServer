@@ -5,3 +5,7 @@
 .container {
     width: 100%;
 }
+
+.main.main_row {
+    width: 50%;
+}
