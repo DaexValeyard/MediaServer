@@ -10,3 +10,8 @@
     width: 50%;
     float: left;
 }
+
+main li {
+    font-family: "Netflix Sans";
+    font-size: 1.5vw;
+}
