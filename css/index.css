@@ -6,14 +6,19 @@
     width: 100%;
 }
 
-.main_row {
-    width: 50%;
+.video_row {
+    width: 75%;
+    float: left;
+}
+
+.text_row {
+    width: 25%;
     float: left;
 }
 
 .main li {
     font-family: "Netflix Sans";
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 }
 
 .main video {
