@@ -2,26 +2,71 @@
     box-sizing: border-box;
 }
 
-.container {
+html {
+    font-family: 'Netflix Sans';
+}
+
+/* Header */
+header {
+    grid-area: header;
+    padding: 30px;
+}
+
+header th {
+    padding: 10px 20px 10px 20px;
+    font-size: 1.7vw;
+    font-weight: bold;
+}
+
+.logo {
+    padding: 10px 50px 10px 20px;
+}
+
+/* Grid */
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'header header header header header header'
+        'menu menu menu main main main'
+        'footer footer footer footer footer footer';
+    grid-column-gap: 10px;
+}
+
+/* menu */
+.menu, .main, .footer {
+    padding: 10px;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.menu ul {
     width: 100%;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
 }
 
-.video_row {
-    width: 75%;
-    float: left;
+.menu li {
+    padding: 10px 50px 10px 50px;
 }
 
-.text_row {
-    width: 25%;
-    float: left;
+.menu li:hover{
+    background-color: #e50914;
 }
-
-.main li {
-    font-family: "Netflix Sans";
-    font-size: 1.2vw;
+/* main */
+.main {
+    grid-area: main;
 }
 
 .main video {
     width: 100%;
-    float: left;
+    height: auto;
+}
+
+.footer {
+    grid-area: footer;
+    padding: 10px;
+    text-align: center;
 }

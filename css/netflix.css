@@ -16,14 +16,18 @@
     background-color: #141414;
 }
 
+.secondaryBackground {
+    color: #808080;
+}
+
 .mainFont {
     color: #ffffff;
-    font-family: "Netflix-Sans";
+    font-family: "Netflix Sans";
 }
 
 .secondaryFont {
     color: #808080;
-    font-family: "Netflix-Sans";
+    font-family: "Netflix Sans";
 }
 
 .logoFont {

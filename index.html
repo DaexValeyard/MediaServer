@@ -8,19 +8,30 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body class="darkBackground">
-	<header class="conainer">
-		<h1 class="logoFont">DMR's Media Server</h1>
-	</header>
-	<div class="main container">
-		<div class="video_row">
-			<video tabindex="-1" autoplay controls src="videos/test.mp4"></video>
-		</div>
-		<div class="text_row">
-			<ul class="mainFont">
-				<li>Título: Test.mp4</li>
-				<li>Director: Daniel M.R.</li>
-				<li>Descripción: Vídeo de Prueba</li>
+	<div class="grid-container">
+		<header class="grid-item">
+			<table class="mainFont">
+				<tr>
+					<th class="logoFont logo">Media Server</th>
+					<th>Catálogo</th>
+					<th>Servidor</th>
+					<th>Búsqueda</th>
+					<th>Cerrar Sesión</th>
+				</tr>
+			</table>
+		</header>
+		<div class="menu mainFont">
+			<ul>
+				<li>Terror</li>
+				<li>Acción</li>
+				<li>Comedia</li>
 			</ul>
+		</div>
+		<div class="main">
+			<video controls autoplay src="videos/test.mp4"></video>
+		</div>
+		<div class="footer">
+			footer
 		</div>
 	</div>
 </body>
