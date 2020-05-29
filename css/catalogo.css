@@ -1,0 +1,128 @@
+.contenedor-grid {
+    width: 95%;
+    max-width: 1920px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+        "header header header"
+        "aside main main"
+        "aside main main"
+        "footer footer footer";
+}
+
+.contenedor-grid header, 
+.contenedor-grid aside, 
+.contenedor-grid main, 
+.contenedor-grid footer {
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.contenedor-grid header {
+    grid-area: header;
+}
+
+header th {
+    padding: 10px 20px 10px 20px;
+    font-size: 1.5vw;
+}
+
+.logo {
+    padding: 5px 50px 10px 20px;
+}
+
+.contenedor-grid aside {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    grid-area: aside;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside li {
+    margin: 10px;
+    padding: 10px 50px 10px 50px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2vw;
+}
+
+aside li:hover {
+    background-color: #e50914;
+}
+
+.contenedor-grid main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+        "movie-1 movie-2 movie-3"
+        "movie-4 movie-5 movie-6"
+        "movie-7 movie-8 movie-9";
+    grid-gap: 20px;
+}
+
+main .movie-1, main .movie-2, main .movie-3,
+main .movie-4, main .movie-5, main .movie-6,
+main .movie-7, main .movie-8, main .movie-9 {
+    margin: 0px;
+    padding: 1px;
+    max-width: 100%;
+}
+
+.movie-1{
+    grid-area: movie-1;
+}
+
+.movie-2{
+    grid-area: movie-2;
+}
+
+.movie-3{
+    grid-area: movie-3;
+}
+
+.movie-4{
+    grid-area: movie-4;
+}
+
+.movie-5{
+    grid-area: movie-5;
+}
+
+.movie-6{
+    grid-area: movie-6;
+}
+
+.movie-7{
+    grid-area: movie-7;
+}
+
+.movie-8{
+    grid-area: movie-8;
+}
+
+.movie-9{
+    grid-area: movie-9;
+}
+
+footer {
+    grid-area: footer;
+}
+
+@media screen and (max-width: 1280px){
+    header th {
+        font-size: 2.2vw;
+    }
+
+    aside li {
+        font-size: 2vw;
+    }
+}

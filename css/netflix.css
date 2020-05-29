@@ -12,6 +12,11 @@
     font-display: optional;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;;
+}
+
 .darkBackground {
     background-color: #141414;
 }
