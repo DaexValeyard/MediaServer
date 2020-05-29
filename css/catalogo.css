@@ -5,10 +5,10 @@
     display: grid;
     grid-gap: 20px;
     grid-template-areas: 
-        "header header header"
-        "aside main main"
-        "aside main main"
-        "footer footer footer";
+        "logo header header header"
+        "aside main main main"
+        "aside main main main"
+        "footer footer footer footer";
 }
 
 .contenedor-grid header, 
@@ -29,7 +29,11 @@ header th {
 }
 
 .logo {
-    padding: 5px 50px 10px 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
 }
 
 .contenedor-grid aside {
@@ -118,11 +122,12 @@ footer {
 }
 
 @media screen and (max-width: 1280px){
-    header th {
-        font-size: 2.2vw;
+    header th, .logo {
+        line-height: 1.25vw;
+        font-size: 2vw;
     }
 
     aside li {
-        font-size: 2vw;
+        font-size: 1.4vw;
     }
 }
