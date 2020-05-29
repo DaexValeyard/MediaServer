@@ -7,9 +7,6 @@
 	<link rel="stylesheet" type="text/css" href="css/netflix.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link href="https://unpkg.com/cloudinary-video-player/dist/cld-video-player.min.css" rel="stylesheet">
-	<script src="https://unpkg.com/cloudinary-core/cloudinary-core-shrinkwrap.min.js" type="text/javascript"></script>
-	<script src="https://unpkg.com/cloudinary-video-player/dist/cld-video-player.min.js" 
-    type="text/javascript"></script>
 </head>
 <body class="darkBackground">
 	<div class="grid-container">
@@ -32,7 +29,8 @@
 			</ul>
 		</div>
 		<div class="main">
-			<video id="vplayer" controls autoplay src="videos/test.mp4"></video>
+			<video controlslist="nodownload" 
+			tabindex="-1" src="videos/test.mp4"></video>
 		</div>
 		<div class="footer">
 			footer
